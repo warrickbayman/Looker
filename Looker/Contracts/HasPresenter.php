@@ -1,4 +1,4 @@
-<?php namespace Presenter\Contracts;
+<?php namespace Looker\Contracts;
 /**
  * Presenter
  * 
@@ -8,7 +8,7 @@
  * 
  */
 
-interface PresenterContract
+interface HasPresenter
 {
-
+    public function present();
 }

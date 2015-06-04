@@ -1,5 +1,5 @@
-<?php namespace Presenter\Traits;
-use Presenter\Exceptions\InvalidPresenterException;
+<?php namespace Looker\Traits;
+use Looker\Exceptions\InvalidPresenterException;
 
 /**
  * Presenter

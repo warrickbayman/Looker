@@ -1,4 +1,4 @@
-<?php namespace Presenter\Exceptions;
+<?php namespace Looker\Exceptions;
 use Exception;
 
 /**

@@ -1,5 +1,5 @@
-<?php namespace Presenter;
-use Presenter\Contracts\PresenterContract;
+<?php namespace Looker;
+use Looker\Contracts\PresenterContract;
 
 /**
  * Presenter
