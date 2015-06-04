@@ -1,6 +1,6 @@
 {
-    "name": "warrickbayman/presenter",
-    "description": "A really simple PHP view presenter",
+    "name": "warrickbayman/looker",
+    "description": "A really simple PHP view presenter based on Jeffery Ways laracasts\\Presenter class",
     "require-dev": {
         "phpunit/phpunit": "^4.6"
     },
