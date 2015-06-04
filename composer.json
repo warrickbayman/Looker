@@ -1,0 +1,16 @@
+{
+    "name": "warrickbayman/presenter",
+    "description": "A really simple PHP view presenter",
+    "require-dev": {
+        "phpunit/phpunit": "^4.6"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Warrick Bayman",
+            "email": "me@warrickbayman.co.za"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
