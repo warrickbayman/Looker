@@ -1,5 +1,6 @@
 <?php namespace Looker\Traits;
 use Looker\Exceptions\InvalidPresenterException;
+use Presenter\Looker;
 
 /**
  * Presenter
@@ -16,12 +17,14 @@ trait Presentable
 
     public function present()
     {
+        $defaultClassPath = Looker::getPresenterClassPath();
+
         if (!isset($this->presenter)) {
             $classPath = explode('\\', get_class($this));
             $className = $classPath[count($classPath) -1];
             $root = substr(__NAMESPACE__, 0, strpos(__NAMESPACE__, '\\'));
 
-            $this->presenter = $root . '\Presenters\\' . $className;
+            $this->presenter = $root . '\\' . $defaultClassPath . '\\' . $className;
         }
 
         if (!class_exists($this->presenter)) {
