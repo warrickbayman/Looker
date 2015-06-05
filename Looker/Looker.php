@@ -11,20 +11,32 @@
 class Looker
 {
     private static $presenterClassPath = 'Presenters';
+    private static $presenterClassSuffix = null;
 
     private function __construct()
     {
     }
 
 
-    public static function init($presentClassPath = null)
+    /**
+     * @param null $presentClassPath
+     * @param null $presenterClassSuffix
+     */
+    public static function init($presentClassPath = null, $presenterClassSuffix = null)
     {
         self::$presenterClassPath = is_null($presentClassPath) ? 'Presenters' : $presentClassPath;
+        self::$presenterClassSuffix = is_null($presenterClassSuffix) ? null : $presenterClassSuffix;
     }
 
 
     public static function getPresenterClassPath()
     {
         return self::$presenterClassPath;
+    }
+
+
+    public static function getPresenterClassSuffix()
+    {
+        return self::$presenterClassSuffix;
     }
 }
