@@ -11,6 +11,11 @@
             "email": "me@warrickbayman.co.za"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Looker\\": "Looker/"
+        }
+    },
     "minimum-stability": "stable",
     "require": {}
 }
