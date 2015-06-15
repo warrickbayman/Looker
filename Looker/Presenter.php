@@ -15,7 +15,7 @@ abstract class Presenter implements PresenterContract
     /**
      * @var
      */
-    private $entity;
+    protected $entity;
 
 
     /**

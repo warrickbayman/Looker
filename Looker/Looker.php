@@ -10,7 +10,7 @@
 
 class Looker
 {
-    private static $presenterClassPath = 'Presenters';
+    private static $presenterClassPath = 'Http\Presenters';
     private static $presenterClassSuffix = null;
 
     private function __construct()
