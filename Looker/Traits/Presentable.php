@@ -23,7 +23,8 @@ trait Presentable
         if (!isset($this->presenter)) {
             $classPath = explode('\\', get_class($this));
             $className = $classPath[count($classPath) -1];
-            $root = substr(__NAMESPACE__, 0, strpos(__NAMESPACE__, '\\'));
+            $root = substr(get_class(), 0, strpos(get_class(), '\\'));
+            //$root = substr(__NAMESPACE__, 0, strpos(__NAMESPACE__, '\\'));
 
             $this->presenter = $root . '\\' . $defaultClassPath . '\\' . $className . $presenterClassSuffix;
         }

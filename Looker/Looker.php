@@ -1,4 +1,4 @@
-<?php namespace Presenter;
+<?php namespace Looker;
 /**
  * Presenter
  * 
@@ -24,7 +24,7 @@ class Looker
      */
     public static function init($presentClassPath = null, $presenterClassSuffix = null)
     {
-        self::$presenterClassPath = is_null($presentClassPath) ? 'Presenters' : $presentClassPath;
+        self::$presenterClassPath = is_null($presentClassPath) ? 'Http\Presenters' : $presentClassPath;
         self::$presenterClassSuffix = is_null($presenterClassSuffix) ? null : $presenterClassSuffix;
     }
 
