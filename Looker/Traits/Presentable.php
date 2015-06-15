@@ -1,6 +1,6 @@
 <?php namespace Looker\Traits;
 use Looker\Exceptions\InvalidPresenterException;
-use Presenter\Looker;
+use Looker\Looker;
 
 /**
  * Presenter
