@@ -13,7 +13,7 @@ use Looker\Looker;
 
 trait Presentable
 {
-    private $instance;
+    private $presenterInstance;
 
     public function present()
     {
@@ -24,7 +24,6 @@ trait Presentable
             $classPath = explode('\\', get_class($this));
             $className = $classPath[count($classPath) -1];
             $root = substr(get_class(), 0, strpos(get_class(), '\\'));
-            //$root = substr(__NAMESPACE__, 0, strpos(__NAMESPACE__, '\\'));
 
             $this->presenter = $root . '\\' . $defaultClassPath . '\\' . $className . $presenterClassSuffix;
         }
@@ -33,9 +32,9 @@ trait Presentable
             throw new InvalidPresenterException($className);
         }
 
-        if (!isset($this->instance)) {
-            $this->instance = new $this->presenter($this);
+        if (!isset($this->presenterInstance)) {
+            $this->presenterInstance = new $this->presenter($this);
         }
-        return $this->instance;
+        return $this->presenterInstance;
     }
 }

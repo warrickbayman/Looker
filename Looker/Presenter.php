@@ -1,5 +1,6 @@
 <?php namespace Looker;
 use Looker\Contracts\PresenterContract;
+use Looker\Exceptions\OverrideFailedException;
 
 /**
  * Presenter
@@ -39,6 +40,13 @@ abstract class Presenter implements PresenterContract
             return $this->{$name}();
         }
 
-        return $this->entity->{$name};
+        if (method_exists($this->entity, $name)) {
+            return $this->entity->{$name}();
+        }
+        if (property_exists($this->entity, $name)) {
+            return $this->entity->{$name};
+        }
+
+        throw new OverrideFailedException($name);
     }
 }
