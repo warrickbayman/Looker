@@ -1,4 +1,10 @@
 # Looker
+
+[![Build Status](https://travis-ci.org/warrickbayman/Looker.svg)](https://travis-ci.org/warrickbayman/Looker)
+[![Stable](https://poser.pugx.org/warrickbayman/looker/v/stable.svg)](https://packagist.org/packages/warrickbayman/looker)
+[![Latest Unstable Version](https://poser.pugx.org/warrickbayman/looker/v/unstable)](https://packagist.org/packages/warrickbayman/looker)
+[![License](https://poser.pugx.org/warrickbayman/looker/license)](https://packagist.org/packages/warrickbayman/looker)
+
 A simple PHP presenter library.
 
 ## Why
