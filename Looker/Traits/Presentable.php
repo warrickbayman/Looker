@@ -4,16 +4,17 @@ use Looker\Looker;
 
 /**
  * Presenter
- * 
+ *
  * @copyright   Copyright (c) 2015 Warrick Bayman.
  * @author		Warrick Bayman <me@warrickbayman.co.za>
  * @license     MIT License http://opensource.org/licenses/MIT
- * 
+ *
  */
 
 trait Presentable
 {
     private $presenterInstance;
+    private $presenter;
 
     public function present()
     {
